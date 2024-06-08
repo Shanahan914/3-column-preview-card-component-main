@@ -1,0 +1,129 @@
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgray: hsl(0, 0%, 95%);
+
+  font-size: 15px;
+  font-family: "Lexend Deca";
+  color: var(--Transparentwhite);
+  background-color: var(--Verylightgray);
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.section-1, .section-2, .section-3 {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    max-width: 150px;
+}
+
+.section-1{
+    background-color: var(--Brightorange);
+}
+
+.section-2{
+    background-color: var(--Darkcyan);
+}
+
+.section-3{
+    background-color: var(--Verydarkcyan);
+}
+
+span{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50px;
+    height: 30px;
+}
+
+.s1-image{
+    background-image: url('images/icon-sedans.svg');
+}
+.s2-image{
+    background-image: url('images/icon-suvs.svg');
+}
+.s3-image{
+    background-image: url('images/icon-luxury.svg');
+}
+
+h1{
+    color: var(--Verylightgray);
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.learn-btn{
+    height: 3rem;
+    width: 8rem;
+    border-radius: 20px;
+    border: none;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+.section-1 > button {
+    color: var(--Brightorange)
+}
+
+.section-1 > button:hover {
+    background-color: var(--Brightorange);
+    color: var(--Transparentwhite);
+    border: solid 1px white;
+}
+
+.section-2 > button {
+    color: var(--Darkcyan)
+}
+
+.section-2 > button:hover {
+    background-color: var(--Darkcyan);
+    color: var(--Transparentwhite);
+    border: solid 1px white;
+}
+
+
+.section-3 > button {
+    color: var(--Verydarkcyan)
+}
+
+.section-3 > button:hover {
+    background-color: var(--Verydarkcyan);
+    color: var(--Transparentwhite);
+    border: solid 1px white;
+}
+
+@media only screen and (max-width: 930px){
+    .section-1, .section-2, .section-3 {
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .section-1, .section-2, .section-3 {
+        border-radius: 0;
+    }
+
+    main{
+        width: 240px;
+    }
+}
